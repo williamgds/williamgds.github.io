@@ -27,15 +27,15 @@
     <h1 class="display-4 fw-bold">Guillermo Gómez de Salazar Ramírez</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">Soy desarrollador de software, especializado en automatización robótica de procesos (RPA) y automatización en general. Asimismo, también me interesa la ciberseguridad y el hacking ético, la inteligencia artificial, el uso de criptodivisas y la accesibilidad.
-        Soy defensor a ultranza del código abierto en las instituciones públicas (aunque me veo obligado a utilizar software propietario a diario, pero dejémoslo ahí. Bienvenido/a a mi página persona.</p>
+        Soy defensor a ultranza del código abierto en las instituciones públicas (aunque me veo obligado a utilizar software propietario a diario, pero dejémoslo ahí). Bienvenido/a a mi página personal.</p>
       <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
         <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">Primary button</button>
         <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary</button>
       </div>
     </div>
-    <div class="overflow-hidden" style="max-height: 30vh;">
-      <div class="container px-5">
-        <img src="bootstrap-docs.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+    <div class="row g-5">
+      <h2>Sobre mí</h2>
+      <p>Nací en Madrid, barrio de Salamanca, el 18 de junio de 1992. Por lo que, a fecha de hoy, tengo <span id="anio_de_nacimiento"></span> años.</p>
       </div>
     </div>
   </div>
@@ -44,7 +44,13 @@
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
+    <script>
+    // Para no tener que estar cambiando constantemente mi año de nacimiento (es una broma)
+      var anio = new Date().getFullYear();
+      const ANIO_NACIMIENTO = 1992;
+      document.getElementById("anio_de_nacimiento").innerHTML = anio - ANIO_NACIMIENTO;
+  
+    </script>
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
